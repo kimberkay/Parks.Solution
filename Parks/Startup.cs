@@ -21,8 +21,9 @@ namespace Parks
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddDbContext<ParksContext>(opt =>
+                opt.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
             services.AddControllers();
-            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
