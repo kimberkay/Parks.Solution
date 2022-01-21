@@ -37,9 +37,9 @@ _An api with full CRUD so a user may create, read, update and delete a list of n
 ```
 * Then run the command `dotnet ef database update`
 * After creating the database, you'll need to populate it with the data in the .csv file.
-* Go to MySQL Workbench and navigate to the table `hiking_trails`. Click on the arrow on the left to open the schema details. 
-* Right click on `trails` table and select "Table Data Import Wizard"
-* Navigate to where you cloned the project and select the file `trails.csv`
+* Go to MySQL Workbench and navigate to the table `parks`. Click on the arrow on the left to open the schema details. 
+* Right click on `parks` table and select "Table Data Import Wizard"
+* Navigate to where you cloned the project and select the file `parks.csv`
 * Click next through the following windows to import the data
 * If you need help, see this article: https://towardsdatascience.com/how-to-import-a-csv-file-into-mysql-workbench-17cb120169c8 
 * After importing the data, return to your terminal
@@ -49,10 +49,10 @@ _An api with full CRUD so a user may create, read, update and delete a list of n
 ## API endpoints
 #### HTTP Requests
 ```
-GET /api/Trails
-POST /api/Trails
-GET /api/Trails{id}
-DELETE /api/Trails{id}
+GET /api/Parks
+POST /api/Parks
+GET /api/Parks{id}
+DELETE /api/Parks{id}
 ```
 
 #### Path Parameters
