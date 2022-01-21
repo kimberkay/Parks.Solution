@@ -16,8 +16,9 @@ namespace Parks.Migrations
                     Name = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
                     Type = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
                     State = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
-                    Near = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
-                    ParkOverview = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true)
+                    Established = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
+                    Acres = table.Column<int>(type: "int", nullable: false),
+                    OverView = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true)
                 },
                 constraints: table =>
                 {

@@ -8,10 +8,10 @@ namespace Parks.Models
 
     public string State { get; set; }
 
-    public string Near { get; set; }
-
-    public string ParkOverview { get; set; }
+    public string Established { get; set; }
 
     public int Acres { get; set; }
+
+    public string OverView { get; set; }
   }
 }

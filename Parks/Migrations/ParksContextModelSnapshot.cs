@@ -25,13 +25,13 @@ namespace Parks.Migrations
                     b.Property<int>("Acres")
                         .HasColumnType("int");
 
+                    b.Property<string>("Established")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<string>("Name")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<string>("Near")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<string>("ParkOverview")
+                    b.Property<string>("OverView")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("State")
