@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Cors;
 using Parks.Models;
 
 namespace Parks.Controllers
@@ -21,6 +22,7 @@ namespace Parks.Controllers
     }
 
     // GET: api/Parks
+    [EnableCors("outside")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Park>>> Get(string name, string type, string state)
     {
