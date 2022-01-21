@@ -22,8 +22,8 @@ namespace Parks.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("Acres")
-                        .HasColumnType("int");
+                    b.Property<string>("Acres")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Established")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");

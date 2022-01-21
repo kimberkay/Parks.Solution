@@ -8,7 +8,7 @@ using Parks.Models;
 namespace Parks.Migrations
 {
     [DbContext(typeof(ParksContext))]
-    [Migration("20220121190139_Initial")]
+    [Migration("20220121212240_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,8 +24,8 @@ namespace Parks.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("Acres")
-                        .HasColumnType("int");
+                    b.Property<string>("Acres")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Established")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
