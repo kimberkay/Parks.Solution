@@ -10,7 +10,7 @@ namespace Parks.Models
 
     public string Established { get; set; }
 
-    public double Acres { get; set; }
+    public string Acres { get; set; }
 
     public string OverView { get; set; }
   }
