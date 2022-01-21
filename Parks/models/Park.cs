@@ -11,5 +11,7 @@ namespace Parks.Models
     public string Near { get; set; }
 
     public string ParkOverview { get; set; }
+
+    public int Acres { get; set; }
   }
 }
