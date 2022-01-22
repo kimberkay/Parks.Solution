@@ -88,7 +88,7 @@ This API uses [Swagger](https://swagger.io/tools/swagger-ui/) REST API Documenta
 * Note: the server must be running to access Swagger and test out parameters
 
 ## Known Bugs
-* No known bugs
+* Can only be locally run
 
 ## License
 _MIT License: https://opensource.org/licenses/MIT_
