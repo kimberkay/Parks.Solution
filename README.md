@@ -2,7 +2,7 @@
 
 #### By: Kim Brannian
 
-#### _An API to list national and state parks._
+#### _An API to view and create a list of national and state parks._
 
 ## Technologies Used
 * C#
